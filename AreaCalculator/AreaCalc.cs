@@ -6,7 +6,7 @@
         private int multiplying_two = 2;
         private double multiply_half = .5;
         private double _pi = 3.14;
-        private int multiplying_100 = 4;
+        private int multiplying_100 = 100;
 
         public double getSquareArea(string width,string height)
         {
@@ -34,7 +34,7 @@
         }
         public double getCircleRadius(int circumference)
         {
-            return RoundNumber((double)circumference / multiplying_100);
+            return RoundNumber((double)(circumference / multiplying_two * _pi));
         }
         public double getCircleDiameter(int circumference)
         {
@@ -43,7 +43,8 @@
 
         private double RoundNumber(double roundn)
         {
-          return Math.Round(roundn *multiplying_100/multiplying_100);
+            return Math.Round(roundn * multiplying_100 / multiplying_100);
+          //return Math.Round(roundn *multiplying_100/multiplying_100);
         }
 
         private int stringConverter(string num)

@@ -27,7 +27,7 @@ namespace AreaCalculatorTest
         [TestMethod]
         public void TriangleAreaSuccess()
         {
-            Assert.AreEqual(12.5, ac.getTriangleArea(5, 5));
+            Assert.AreEqual(12, ac.getTriangleArea(5, 5));
 
         }
         [TestMethod]
@@ -38,7 +38,7 @@ namespace AreaCalculatorTest
         [TestMethod]
         public void CircleRadiusSuccess()
         {
-            Assert.AreEqual(2.5, ac.getCircleRadius(5));
+            Assert.AreEqual(1, ac.getCircleRadius(5));
         }
         [TestMethod]
         public void CircleDiameterSuccess()
